@@ -21,6 +21,7 @@ This project demonstrates a simple ETL (Extract, Transform, Load) process using 
 **Extract**: 
 - Source: Kaggle
 - Method: Kaggle API to download the dataset
+  
 **Transform**:
 - ***Tool***: Python with Pandas library.
   
