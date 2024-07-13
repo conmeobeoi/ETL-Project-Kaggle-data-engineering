@@ -19,19 +19,20 @@ This project demonstrates a simple ETL (Extract, Transform, Load) process using 
 
 ### Steps Involved:
 **Extract**: 
-- Source: Kaggle
-- Method: Kaggle API to download the dataset
+- ***Source***: Kaggle
+- ***Method***: Kaggle API to download the dataset
   
 **Transform**:
 - ***Tool***: Python with Pandas library.
-  
-- **Transform**: Perform data cleaning, modeling, and transformations on the raw data. Load the transformed data into the Final Staging Layer.
-  
-- **Analyze**: Conduct data analysis using SQL to answer 5 specific questions.
+- ***Process***: Loading the cleaned data into an SQL database
+
+**Analyze**:
+- ***Tool***: SQL
+- ***Process***: Data analysis using SQL queries
 
 ## Dataset
 
-This dataset consists of listings of all the movies and tv shows available on Netflix, along with details such as - cast, directors, ratings, release year, duration, etc.
+This dataset contains 2022 and 2023 global mart sales dataset
 
 ## Data Cleaning and Transformation Tasks
 
