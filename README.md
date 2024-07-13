@@ -15,12 +15,14 @@
 This project demonstrates a simple ETL (Extract, Transform, Load) process using Python and SQL. The main objective is to extract a dataset from Kaggle, transform it using Python and Pandas, and load it into an SQL database for further analysis.
 
 ## Project Overview
-![Alt Text](ELT.png) <br>
+![Alt Text](ETL.png) <br>
 
 ### Steps Involved:
-- **Extract**: Download the Netflix Movies and TV Shows dataset using Python.
-  
-- **Load**: Load the raw data into the Raw Data Layer using SQL.
+**Extract**: 
+- Source: Kaggle
+- Method: Kaggle API to download the dataset
+**Transform**:
+- ***Tool***: Python with Pandas library.
   
 - **Transform**: Perform data cleaning, modeling, and transformations on the raw data. Load the transformed data into the Final Staging Layer.
   
