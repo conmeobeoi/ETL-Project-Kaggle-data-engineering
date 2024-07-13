@@ -36,30 +36,29 @@ This dataset contains 2022 and 2023 global mart sales dataset
 
 ## Data Cleaning and Transformation Tasks
 
-- **Handling Foreign Characters**: Ensure all foreign characters in the dataset are correctly encoded and standardized.
+- Read data from the file and handle null values
 
-- **Removing Duplicates**: Identify and remove any duplicate entries to ensure data integrity.
+- Rename columns names, make them lower case and replace space with underscore
   
-- **Data Type Conversion**: Convert data types as necessary for accurate data analysis.
+- Derive new columns discount , sale price and profit
   
-- **Identify and Populate Missing Values**: Detect missing values and use appropriate methods to populate them.
+- Convert order date from object data type to datetime
   
-- **New Dimension Table for Countries**: Create a new dimension table for countries and list relevant data for comprehensive analysis.
+- Drop cost price list price and discount percent columns
 
 ## SQL Analysis
 
 Using the transformed data in the Final Staging Layer, perform SQL queries to answer the following five questions:
 
-- **Question 1**: For each director count the no of movies and tv shows created by them in separate columns 
-for directors who have created tv shows and movies both.
+- **Task 1**: Find top 10 highest reveue generating products 
 
-- **Question 2**: Which country has highest number of comedy movies.
+- **Task 2**: Find top 5 highest selling products in each region
   
-- **Question 3**: For each year (as per date added to netflix), which director has maximum number of movies released.
+- **Task 3**: Find month over month growth comparison for 2022 and 2023 sales eg : jan 2022 vs jan 2023
   
-- **Question 4**: What is average duration of movies in each genre.
+- **Task 4**: For each category which month had highest sales 
   
-- **Question 5**: ind the list of directors who have created horror and comedy movies both.
+- **Task 5**: Which sub category had highest growth by profit in 2023 compare to 2022
 
 ## How to Run the Project
 
@@ -67,16 +66,13 @@ for directors who have created tv shows and movies both.
 - Ensure you have Python and a SQL database installed.
 - Install required Python libraries using pip install -r requirements.txt.
 
-**2. Download Dataset**: 
-- Use the provided Python script to download the dataset.
+**2. Download and process dataset**: 
+- Use the provided Python script to download and process the dataset.
 
 **3. Load Data**:
-- Load the raw data into the SQL database.
-  
-**4. Transform Data**:
-- Execute SQL scripts for data cleaning and transformation.
+- Load the cleaned data into the SQL database.
 
-**5. Analyze Data**: 
+**4. Analyze Data**: 
 - Run the SQL queries to answer the specified questions.
 
 ## Contributing
